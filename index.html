@@ -8,6 +8,7 @@
   </head>
   <body>
     <body>
+      
       <!-- ******** SOMEss THINGS HAVE CHANGED WITH v1.0.4 ******** -->
       <a-scene>
         <!-- Asset Management System -->
@@ -19,27 +20,30 @@
         
         <!-- Light-Blue Box > Metal Room -->
         <!-- To achieve reflection, with v1.0.4 you need to use side="back" (line 34 and 46) -->
+        <a-sky color="#BDDFDA">
+
+        </a-sky>
         <a-box color="#FFFFFF"
                src="images/metalito-a.jpg"
-               repeat="1 1"
+               repeat="3 3"
                normal-map="#metal-NRM"
                normal-texture-repeat="3 3"
                normal-scale="1 -1"
                roughness="0.9"
-               width="4" height="4" depth="4"
-               position="-2 1.5 -9"
+               width="10" height="4" depth="10"
+               position="-5 1.5 -9"
                side="back">
         </a-box>
         <!-- Brown Box > Brick Room -->
         <a-box material="color: #FFFFFF;
                          src: #brick;
-                         repeat: 4 4;
+                         repeat: 10 10;
                          normal-map: #brick-NRM;
                          normal-texture-repeat: 2 2;
                          normal-scale: 1 -1;
                          roughness: 0.9"
-               width="4" height="4" depth="4"
-               position="2 1.5 -9"
+               width="10" height="4" depth="10"
+               position="5 1.5 -9"
                side="back">
         </a-box>
         
@@ -54,10 +58,29 @@
         <a-sphere material="color: #AA0000;
                             roughness: 0.9;
                             shader: flat;
-                            opacity: 0.5"
-                  radius="0.7"
+                            opacity: 1"
+                  radius="0.5"
                   position="2 1.5 -8">
         </a-sphere>
+        <a-box material="color: #ffffff;
+                        roughness: 0.9;
+                        src: #brick;
+                        normal-map: #brick-NRM;
+                        repeat: 40 40;"
+               width="70"
+               height="0.3"
+               depth="70"
+               position="0 -0.7 0">
+        </a-box>  
+        <a-box  material="color:  #9C1313;
+                          roughness: 0.5;"
+                width="10"
+                height="1"
+                depth="0.3"
+                position="0 0 -10">
+        </a-box>
+               
     </a-scene>
+
 </body>
 </html>
